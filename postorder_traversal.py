@@ -37,3 +37,12 @@ def postOrder(root):
         postOrder(root.left)
         postOrder(root.right)
         print root.data,
+
+
+def post_order(root):
+    # recursively
+    if root.left:
+        post_order(root.left)
+    if root.right:
+        post_order(root.right)
+    print root.data,
